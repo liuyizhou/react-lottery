@@ -1,0 +1,70 @@
+// 底部
+.footer {
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 0 .18rem .13rem;
+    border-top: 1px solid @fontlight;
+    .reward-tip {
+        height: .55rem;
+        line-height: .55rem;
+        color: @fontlight;
+        text-align: center;
+        border-bottom: 1px solid #e2e2e2;
+        margin-bottom: .1rem;
+        overflow: hidden;
+        position: relative;
+        p{
+            display: block;
+            height: .55rem;
+            position: relative;
+            overflow: hidden;
+            -webkit-animation: marquee 8s 2s ease-in-out eses;
+            animation: marquee 8s 2s ease-in-out infinite;
+        }
+        .bonus {
+            color: @red;
+        }
+    }
+    .random {
+        cursor: pointer;
+        width: 1.44rem;
+        height: .81rem;
+    }
+    .btn {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        background-image: none;
+        white-space: nowrap;
+        line-height: 1.42857143;
+        border-radius: 4px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .btn-chose {
+        color: #fff;
+        font-size: .28rem;
+        background-color: #e04241;
+        border-color: #d61c0e;
+        width: 4.32rem;
+        margin-left: .2rem;
+        line-height: .81rem;
+        height: .81rem;
+    }
+}
+@keyframes marquee {
+    0%{top:0}
+    50%{top: -100%}
+    100%{top: -200%}
+}
+@-webkit-keyframes marquee {
+    0%{top:0}
+    50%{top: -100%}
+    100%{top: -200%}
+}

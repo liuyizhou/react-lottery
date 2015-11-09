@@ -1,0 +1,29 @@
+// 滚动条
+.open {
+    border-bottom: 1px solid #c7c7c7;
+    height: .65rem;
+    line-height: .65rem;
+    vertical-align: middle;
+    font-size: .24rem;
+    position: absolute;
+    width: 100%;
+    background: #fafafa;
+    -webkit-transition: all 100ms ease-out 0s;
+    transition: all 100ms ease-out 0s;
+    position: absolute;
+    top: .82rem;
+    left: 0;
+    p {
+        float: left;
+        .remain-time {
+            color: @fontweight;
+            font-weight: 600;
+            font-size: .28rem;
+            margin-left: .14rem;
+        }
+    }
+    .pull-reward {
+        color: @fontlight;
+        float: right;
+    }
+}

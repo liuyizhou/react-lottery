@@ -1,0 +1,35 @@
+// 导航
+.sever-nav {
+    background: #fff;
+    border-bottom: 1px solid @hr;
+    overflow: hidden;
+    .select-nav {
+        font-size: .28rem;
+        line-height: .8rem;
+        height: .8rem;
+        vertical-align: middle;
+        width: 1464px;
+        li {
+            width: 1.85rem;
+            height: .8rem;
+            box-sizing: border-box;
+            text-align: center;
+            display: inline-block;
+            &:after {
+                background-color: #c7c7c7;
+                content: " ";
+                display: block;
+                position: absolute;
+                top: .27rem;
+                width: 1px;
+                height: .26rem;
+                margin-left: -.08rem;
+            }
+        }
+        .active {
+            color: @red;
+            border-bottom: 3px solid @red;
+        }
+    }
+}
+
