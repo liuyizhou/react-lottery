@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <nav class="sever-nav">
+        <ul class="select-nav">
+            <li class="active">选第1位<i class="reward"></i></li>
+            <li>选2全中</li>
+            <li>选3全中<i class="reward"></i></li>
+            <li>选4全中</li>
+        </ul>
+    </nav>
+    <article>
+    <button>xxxxxx</button>
+        <div class="open">
+            <p><img src="img/icon_clock.png" alt="time" class="icon icon-clock">距离50期截止<span class="remain-time">09:37</span></p>
+            <div class="pull-reward">下拉历史开奖<img src="img/icon_down.png" class="icon icon-down"></div>
+        </div>
+        <div class="content">
+            <div class="numbers">01</div>
+            <div class="numbers">02</div>
+            <div class="numbers">03</div>
+            <div class="numbers">04</div>
+            <div class="numbers">05</div>
+            <div class="numbers">06</div>
+            <div class="numbers">07</div>
+            <div class="numbers">08</div>
+            <div class="numbers">09</div>
+            <div class="numbers">10</div>
+            <div class="numbers">11</div>
+        </div>
+    </article>
+    <footer class="footer">
+        <div class="reward-tip">猜中任意三个开奖号码，单注奖<span class="bonus">26元</span>,再加奖<span class="bonus">4元</span></div>
+        <a href="javascript:void(0);"><img src="img/random.png" class="random" alt="随机一注"></a>
+        <a href="javascript:void(0);" class="btn btn-chose">至少选择两个球</a>
+    </footer>
+</body>
+<script src="http://cdn.bootcss.com/zepto/1.1.4/zepto.js"></script>
+<script src="js/touch.js"></script>
+<script>
+$('button').tap(function() {
+    $('.content').load('tpl.html');
+})
+</script>
+</html>
